@@ -1,0 +1,29 @@
+html{
+  height: 100%;
+}
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  height: 100%;
+}
+
+h1{
+  color: white;
+  text-align: center;
+  margin: 3rem;
+}
+
+main{
+  background: rgb(119, 114, 114);
+  padding: 2rem;
+  height: 100%;
+}
+
+section{
+  background: white;
+  padding: 2rem 1rem;
+  box-shadow: 5px 5px 5px #aaaaaa;
+  border-radius: 5px;
+  width: 300px;
+}
