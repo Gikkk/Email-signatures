@@ -1,29 +1,63 @@
-html{
-  height: 100%;
+/* general structure  */
+*{
+  box-sizing: border-box;
 }
 
 body{
   box-sizing: border-box;
   margin: 0;
-  height: 100%;
+  background: rgb(119, 114, 114);
 }
 
 h1{
   color: white;
-  text-align: center;
   margin: 3rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  
 }
 
 main{
   background: rgb(119, 114, 114);
-  padding: 2rem;
-  height: 100%;
+  padding: 1rem;
+  display: grid;
+  row-gap: 2rem;
+  justify-items: center;
 }
 
-section{
+.container{
   background: white;
-  padding: 2rem 1rem;
+  padding: 1rem;
   box-shadow: 5px 5px 5px #aaaaaa;
   border-radius: 5px;
-  width: 300px;
+  width: 280px;
+  height: 250px;
+}
+
+
+/* placing signatures on different screen size */
+@media( min-width: 640px){
+  main{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media( min-width: 1024px){
+  main{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media( min-width: 1440px){
+  main{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media( min-width: 1600px){
+  main{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
 }
